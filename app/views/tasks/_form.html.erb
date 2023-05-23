@@ -1,0 +1,7 @@
+<%= form_with model: @task do |row| %>
+  <%= row.label :title %>
+  <%= row.text_field :title %>
+  <%= row.label :details %>
+  <%= row.text_field :details %>
+  <%= row.submit %>
+<% end %>

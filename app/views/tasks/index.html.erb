@@ -1,0 +1,11 @@
+<div class="container mx-auto mt-5">
+  <h1>My Tasks</h1>
+
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><%= link_to task.title, task_path(task) %></li>
+    <% end %>
+  </ul>
+
+  <button type="button" class="btn btn-secondary text-decoration-none"><%= link_to "Create new Task", new_task_path %></button>
+</div>
